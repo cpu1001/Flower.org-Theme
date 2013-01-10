@@ -1,0 +1,15 @@
+/*
+Theme Name:     Flowers.org - 2012 Child Theme
+Theme URI:      http://flowers.zaowebdesign.com
+Description:    Child theme for the Twenty Twelve theme - Used for Flowers site
+Author:         Justin Sainton
+Author URI:     http://zaowebdesign.com
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+#grid_view_products_page_container { 
+	width : 1090px ! important;
+}
