@@ -22,18 +22,32 @@
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<div id="top-row">
-				<div id="top-left"></div>
-				<div id="top-middle"></div>
+				<div id="top-left">
+					<?php echo wpsc_flowers_home_ad( 'top-left' ); ?>
+				</div>
+				<div id="top-middle">
+					<?php echo wpsc_flowers_show_category( 'top-right-top' ); ?>
+				</div>
 				<div id="top-right">
-					<div id="top-right-top"></div>
-					<div id="top-right-bottom"></div>
+					<div id="top-right-top">
+						<?php echo wpsc_flowers_show_category( 'top-right-top' ); ?>
+					</div>
+					<div id="top-right-bottom">
+						<?php echo wpsc_flowers_home_ad( 'top-right' ); ?>
+					</div>
 				</div>
 			</div>
 			<div id="middle-row">
-				<div id="middle-left"></div>
-				<div id="middle-right"></div>
+				<div id="middle-left">
+					<?php echo wpsc_flowers_show_category( 'middle-left' ); ?>
+				</div>
+				<div id="middle-right">
+					<?php echo wpsc_flowers_show_category( 'middle-right', false ); ?>
+				</div>
 			</div>
-			<div id="bottom-row"></div>			
+			<div id="bottom-row">
+				<?php echo wpsc_flowers_best_sellers( '-1 month' ); ?>
+			</div>			
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 	</article><!-- #post -->
